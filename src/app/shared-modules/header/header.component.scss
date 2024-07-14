@@ -1,0 +1,62 @@
+@import "../../app.component.scss";
+
+.header {
+    background-color: #4b3f72;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    animation: fade-left-in 1s ease;
+    margin: 10px;
+    img {
+        height: 40px;
+    }
+}
+
+.company-name {
+    animation: fade-top-in 1s ease;
+    margin-left: 20px;
+    h1 {
+        color: white;
+        font-size: 20px;
+        margin: 0;
+    }
+}
+
+@keyframes fade-left-in {
+    0% {
+        transform: translateX(-100px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes fade-top-in {
+    0% {
+        transform: translateY(-100px);
+    }
+
+    100% {
+        transform: translatey(0);
+    }
+}
+
+@media screen and (min-width:990px) {
+    
+    .logo {
+        margin-left: 100;
+        img {
+            height: 70px;
+        }
+    }
+
+    .company-name {
+        h1 {
+            font-size:50px;
+        }
+    }
+}
