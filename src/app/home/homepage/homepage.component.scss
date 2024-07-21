@@ -3,6 +3,9 @@
 .section {
     background-color: #c7c1db;
     padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .banner {
@@ -11,6 +14,11 @@
 
 .d-block {
     height: 250px;
+}
+
+.first-phase {
+    text-align: center;
+    padding: 30px;
 }
 
 .short-description {
@@ -39,6 +47,7 @@
             background-color: orange;
             color: white;
             animation:fade 1s ease;
+            cursor: pointer;
         }
     }
 }
@@ -88,8 +97,12 @@
 @media screen and (min-width:990px) {
 
     .d-block {
-        height: 550px;
-        margin-top: 10px 30px 0 30px;
+        height: 600px;
+    }
+
+    .banner {
+        width: 1300px;
+        height: 600px;
     }
 
     .second-phase {
